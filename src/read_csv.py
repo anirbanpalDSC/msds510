@@ -2,19 +2,11 @@ import sys
 import csv
 
 
-def check_argument(index):  # function to try get arguments that will not crash program if argument out of bounds
-    try:
-        sys.argv[index]
-    except IndexError:
-        return ''
-    else:
-        return sys.argv[index]
-
-
-"""Take a CSV file as input and extract any given row"""
-
-
 def read_csv(input):
+    """
+    :param input: a fully qualified file name (csv) to read data from
+    :return: print the rows
+    """
     rows = []
     with open(input, mode='r') as read:
         csvtext = csv.reader(read)
@@ -24,8 +16,20 @@ def read_csv(input):
         print(rows[161])
 
 
-if __name__ == "__main__":
-    input = check_argument(1)
+def main():
+    """
+    interprets command line request
+    :return: Creates the output csv file in the specified location
+    """
 
-    if input:  # argument is valid
-        read_csv(input)
+    if len(sys.argv) != 3:
+        print("this report generator takes two parameters, "
+              "an input file and an output file")
+    else:
+        print("input file: " + sys.argv[1])
+        print("output file: " + sys.argv[2])
+        read_csv(sys.argv[1], sys.argv[2])
+
+
+if __name__ == "__main__":
+    main()

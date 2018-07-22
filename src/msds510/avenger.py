@@ -1,14 +1,13 @@
-import datetime
+import datetime as dt
 
 
 class Avenger:
+
     def __init__(self, record=None):
         """
         Initializes the object with a dictionary-based record. If
         no records is provided, the instance attributes are not set.
-
-        Args:
-            record (dict): Dictionary-based record of Avenger data
+        :param record: record (dict): Dictionary-based record of Avenger data
         """
 
         if record:
@@ -37,25 +36,20 @@ class Avenger:
 
     def url(self):
         """
-
         Returns:
-            str: The URL of the comic character on the Marvel Wikia
-
+            str: The URL of the comic character on the Marvel Wiki
         """
         return self.url_value
 
     def name_alias(self):
         """
-
         Returns:
             str: The full name or alias of the character
-
         """
         return self.alias
 
     def appearances(self):
         """
-
         Returns:
             int: The number of comic books that character
             appeared in as of April 30
