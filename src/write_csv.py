@@ -3,7 +3,11 @@ import csv
 import re
 
 
-def check_argument(index):  # function to try get arguments that will not crash program if argument out of bounds
+"""Function to try get arguments that will not
+crash program if argument out of bounds"""
+
+
+def check_argument(index):
     try:
         sys.argv[index]
     except IndexError:
@@ -11,10 +15,14 @@ def check_argument(index):  # function to try get arguments that will not crash 
     else:
         return sys.argv[index]
 
-"""Take a string, convert to lower case, replace space and slash with underscore and strip trailing question marks and newlines """
+
+"""Take a string, convert to lower case,
+replace space and slash with underscore
+and strip trailing question marks and newlines """
+
 
 def str_convert(str_input):
-    str_ouptut =  re.sub(" |//|\/", "_", str_input).lower().rstrip("?|\n")
+    str_ouptut = re.sub(" |//|\/", "_", str_input).lower().rstrip("?|\n")
 
     return str_ouptut
 
@@ -23,13 +31,13 @@ def str_convert(str_input):
 
 
 def write_csv(input, output):
-    with open(input, mode = 'r') as read:
+    with open(input, mode='r') as read:
         csvtext = csv.DictReader(read)
 
         keys = csvtext.fieldnames
 
-        with open(output, mode = 'w') as write:
-            processedtext = csv.DictWriter(write, fieldnames = keys)
+        with open(output, mode='w') as write:
+            processedtext = csv.DictWriter(write, fieldnames=keys)
             colheader = {}
             for key in keys:
                 colheader[key] = str_convert(key)
@@ -38,7 +46,6 @@ def write_csv(input, output):
 
             for row in csvtext:
                 processedtext.writerow(row)
-
 
 
 if __name__ == "__main__":

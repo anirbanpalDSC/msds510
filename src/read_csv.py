@@ -2,7 +2,12 @@ import sys
 import csv
 
 
-def check_argument(index):  # function to try get arguments that will not crash program if argument out of bounds
+"""Function to try get arguments that will not
+crash program if argument out of bounds"""
+
+
+def check_argument(index):
+
     try:
         sys.argv[index]
     except IndexError:

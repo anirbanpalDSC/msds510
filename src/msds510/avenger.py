@@ -1,4 +1,4 @@
-import datetime
+import datetime as dt
 
 
 class Avenger:
@@ -36,40 +36,37 @@ class Avenger:
             self.years_since_joining_value = record["years_since_joining"]
 
     def url(self):
-        """
 
+        """
         Returns:
             str: The URL of the comic character on the Marvel Wikia
-
         """
         return self.url_value
 
     def name_alias(self):
-        """
 
+        """
         Returns:
             str: The full name or alias of the character
-
         """
+
         return self.alias
 
     def appearances(self):
-        """
 
+        """
         Returns:
             int: The number of comic books that character
             appeared in as of April 30
-
         """
         return int(self.appearances_count)
 
     def is_current(self):
-        """
 
+        """
         Returns:
             bool: Is the member currently active on an
             avengers affiliated team? (True/False)
-
         """
 
         if not self.current.strip():
@@ -78,22 +75,22 @@ class Avenger:
             return True if self.current == 'YES' else False
 
     def gender(self):
-        """
 
+        """
         Returns:
             str: The recorded gender of the character
-
         """
+
         return self.gender_value
 
     def year(self):
-        """
 
+        """
         Returns:
             int: The year the character was introduced
             as a full or reserve member of the Avengers
-
         """
+
         return int(self.year_value)
 
     def get_month(self):
@@ -106,57 +103,54 @@ class Avenger:
         return 0
 
     def date_joined(self):
-        """
 
+        """
         Returns:
             datetime.date: The date the character joined
-
         """
 
-        return (dt.date(self.year(), self.get_month(), 1))
+        return dt.date(self.year(), self.get_month(), 1)
 
     def days_since_joining(self):
-        """
 
+        """
         Returns:
             int: The number of integer days since the character joined
-
         """
+
         rval = dt.date.today() - self.date_joined()
         rval = rval.days
         return rval
 
     def years_since_joining(self):
-        """
 
+        """
         Returns:
             int: The number of integer years since the character joined
-
         """
 
         return dt.date.today().year - self.year()
 
     def notes(self):
-        """STRIP OFF TRAILING NEWLINES AND SPACES
 
+        """Strip off trailing spaces and newlines
         Returns:
             str: Descriptions of deaths and resurrections.
-
         """
+
         return self.notes_value.strip()
 
     def __str__(self):
-        """
 
+        """
         Returns:
             str: A human-readable value for this character
-
         """
+
         return self.name_alias()
 
     def __repr__(self):
         """
-
         Returns:
             str: String representation of object.  Useful for debugging.
         """
@@ -167,7 +161,8 @@ class Avenger:
                                      or key == 'url') + ")"
 
     def to_markdown(self, recordslist, outfile):
-        """takes a list of records, formats them
+
+        """Takes a list of records, formats them
         and prints them to an output file.
         Args:
             recordslist: list of top 10 avenger records
@@ -175,6 +170,7 @@ class Avenger:
         Result:
             prints the contents to a formatted outfile.
         """
+
         with open(outfile, 'w') as ofile:
             for idx, rc in enumerate(recordslist):
                 avenger = Avenger(rc)

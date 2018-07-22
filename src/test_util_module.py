@@ -1,8 +1,4 @@
-#import os
-#pathModule = os.getcwd()+'\\utils.py'
-#os.system('python '+ pathModule)
-
-# Import the utils.py file
+# Import the utils module
 from src.utils import get_date_joined, days_since_joined
 
 records = [
@@ -14,7 +10,6 @@ records = [
 ]
 
 for record in records:
-
     print("Input Record -", record)
 
     dtJoin = get_date_joined((record['year']), (record['intro']))

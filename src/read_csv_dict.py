@@ -2,7 +2,11 @@ import sys
 import csv
 
 
-def check_argument(index):  # function to try get arguments that will not crash program if argument out of bounds
+"""Function to try get arguments that will not
+crash program if argument out of bounds"""
+
+
+def check_argument(index):
     try:
         sys.argv[index]
     except IndexError:
@@ -24,6 +28,7 @@ def read_csv_dict(input):
 
         for key in keys:
             print(key, listdicts[160][key])
+
 
 if __name__ == "__main__":
     input = check_argument(1)
