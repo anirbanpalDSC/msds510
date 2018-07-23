@@ -1,3 +1,9 @@
+"""
+This module takes input CSV file as the
+only argument, reads the data in dictionary
+and prints the 161st row.
+"""
+
 import sys
 import csv
 

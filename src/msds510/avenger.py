@@ -1,3 +1,9 @@
+"""
+This module initializes the object with a dictionary-based
+record. If no records is provided, the instance attributes
+are not set.
+"""
+
 import datetime as dt
 
 
@@ -5,8 +11,6 @@ class Avenger:
 
     def __init__(self, record=None):
         """
-        Initializes the object with a dictionary-based record. If
-        no records is provided, the instance attributes are not set.
         :param record: record (dict): Dictionary-based record of Avenger data
         """
 

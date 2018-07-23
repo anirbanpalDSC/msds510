@@ -1,3 +1,8 @@
+"""
+This module takes input CSV file as the
+only argument and prints the 162nd row.
+"""
+
 import sys
 import csv
 

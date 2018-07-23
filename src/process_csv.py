@@ -1,3 +1,9 @@
+"""
+This module takes a CSV file as input,
+creates python friendly headers, does string
+clean up and type conversion and then output.
+"""
+
 import sys
 import csv
 import src.msds510.utils_midterm as utils

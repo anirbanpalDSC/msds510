@@ -1,3 +1,8 @@
+"""
+This module takes an input file and
+converts it to UTF-8 format output.
+"""
+
 import sys
 
 

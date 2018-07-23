@@ -1,3 +1,10 @@
+"""
+This module reads an input csv file, sorts the
+content, keeps top 10 appearances and sends the
+sorted and filtered records and an outfile destination
+to to_markdown to print
+"""
+
 import sys
 import csv
 from src.msds510.avenger import Avenger as av
@@ -5,10 +12,6 @@ from src.msds510.avenger import Avenger as av
 
 def make_report(input, output):
     """
-    reads an input csv file, sorts the content,
-    keeps top 10 appearances and sends the sorted
-    and filtered records and an outfile destination
-    to to_markdown to print
     :param input: a fully qualified file name (csv) to read data from
     :param output: a fully qualified destination file name (md)
     :return: executes the to_markdown function with sorted records and writes

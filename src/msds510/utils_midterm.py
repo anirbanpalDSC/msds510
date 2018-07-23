@@ -1,3 +1,7 @@
+"""
+Helper module for mid-term project.
+"""
+
 import datetime as dt
 import csv
 

@@ -1,3 +1,10 @@
+"""
+This module is part of assignment 6.1 and NOT the
+mid term project. But it is kept in the same
+directory structure as per the instruction. It has the
+helper functions for the assignment.
+"""
+
 import datetime as dt
 
 # Define the month dictionary

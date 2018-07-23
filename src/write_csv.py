@@ -1,3 +1,10 @@
+"""
+This module reads in the data from the input CSV,
+takes the original fieldnames from the input file,
+changes those fieldnames to Python friendly names
+and uses those as the new fieldnames in the new CSV file.
+"""
+
 import sys
 import csv
 import re

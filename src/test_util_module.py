@@ -1,3 +1,8 @@
+"""
+This module has the test scripts to
+test other modules in the project.
+"""
+
 from src.utils import get_date_joined, days_since_joined
 
 records = [
