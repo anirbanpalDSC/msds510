@@ -188,7 +188,6 @@ class Avenger:
                 ofile.write("## Notes \n\n")
                 ofile.write(avenger.notes() + "\n\n")
 
-"""
 Test method for Avengers class
 """
 
