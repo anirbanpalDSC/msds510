@@ -1,8 +1,8 @@
-#import os
-#pathModule = os.getcwd()+'\\utils.py'
-#os.system('python '+ pathModule)
+"""
+This module has the test scripts to
+test other modules in the project.
+"""
 
-# Import the utils.py file
 from src.utils import get_date_joined, days_since_joined
 
 records = [
