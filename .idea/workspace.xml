@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="afc81f71-ed4b-4f64-8db1-984974e3c61f" name="Default" comment="Add documentation strings" />
+    <list default="true" id="afc81f71-ed4b-4f64-8db1-984974e3c61f" name="Default" comment="Add documentation strings">
+      <change beforePath="$PROJECT_DIR$/src/msds510/avenger.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/msds510/avenger.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,8 +25,8 @@
       <file leaf-file-name="avenger.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/msds510/avenger.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="175" column="41" lean-forward="true" selection-start-line="175" selection-start-column="41" selection-end-line="175" selection-end-column="41" />
+            <state relative-caret-position="578">
+              <caret line="230" column="49" selection-start-line="230" selection-start-column="49" selection-end-line="230" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -52,8 +54,8 @@
         <option value="$PROJECT_DIR$/src/process_csv.py" />
         <option value="$PROJECT_DIR$/src/make_report.py" />
         <option value="$PROJECT_DIR$/src/convert_to_utf8.py" />
-        <option value="$PROJECT_DIR$/src/msds510/avenger.py" />
         <option value="$PROJECT_DIR$/src/msds510/utils_midterm.py" />
+        <option value="$PROJECT_DIR$/src/msds510/avenger.py" />
       </list>
     </option>
   </component>
@@ -66,7 +68,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1586" />
     <option name="y" value="194" />
     <option name="width" value="1382" />
@@ -88,12 +90,6 @@
               <item name="msds510" type="b2602c69:ProjectViewProjectNode" />
               <item name="msds510" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="msds510" type="b2602c69:ProjectViewProjectNode" />
-              <item name="msds510" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="processed" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="msds510" type="b2602c69:ProjectViewProjectNode" />
@@ -283,46 +279,32 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1586" y="194" width="1382" height="752" extended-state="0" />
+    <frame x="1358" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49924356" weight="0.32903227" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5378215" side_tool="true" visible="true" weight="0.48225805" />
-      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.46217853" visible="true" weight="0.48225805" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.48865354" weight="0.32580644" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4904051" weight="0.32976446" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3245083" />
-      <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5335821" side_tool="true" visible="true" weight="0.21734476" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Python Console" order="7" sideWeight="0.4664179" visible="true" weight="0.21734476" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.48987207" weight="0.32869378" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4904051" weight="0.32976446" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15618336" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49946696" weight="0.3993576" />
-      <window_info anchor="right" id="R Graphics" order="3" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49946696" weight="0.3993576" />
+      <window_info anchor="right" id="R Packages" order="3" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21801706" />
-      <window_info anchor="right" id="SciView" order="3" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.48987207" weight="0.32869378" />
-      <window_info anchor="right" id="R Packages" order="3" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="R Graphics" order="3" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.53304905" side_tool="true" visible="true" weight="0.32869378" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4904051" weight="0.32976446" />
-      <window_info anchor="bottom" id="Python Console" order="7" sideWeight="0.46695095" visible="true" weight="0.32869378" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -657,8 +639,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/msds510/avenger.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="175" column="41" lean-forward="true" selection-start-line="175" selection-start-column="41" selection-end-line="175" selection-end-column="41" />
+        <state relative-caret-position="578">
+          <caret line="230" column="49" selection-start-line="230" selection-start-column="49" selection-end-line="230" selection-end-column="49" />
         </state>
       </provider>
     </entry>
