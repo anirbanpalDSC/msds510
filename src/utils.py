@@ -41,6 +41,7 @@ def get_month(strIP):
     strMon = strIP[index:(index+3)].lower()
 
     # Convert month abbr/name to month number
+    # Do not allow more than three characters for month name
     try:
         return month_dict[strMon]
     except Exception:
@@ -55,7 +56,8 @@ def get_date_joined(strYr, strIP):
     """
     try:
         intYr = int(strYr)
-        strOP = dt.date(intYr, get_month(strIP), 1)
+        intMonth = get_month(strIP)
+        strOP = dt.date(intYr, intMonth, 1)
         return strOP
     except Exception:
         raise ValueError("Not a date")
@@ -74,3 +76,34 @@ def days_since_joined(strYr, strIP):
         return dtDays
     except Exception:
         raise ValueError("Not a date")
+
+
+def to_int(input):
+    """
+    :param input: The value to be converted to integer
+    :return: If the integer conversion is successful, the int value is returned,
+    otherwise it returns 'None'
+    """
+    try:
+        return int(input)
+    except Exception:
+        return 'None'
+
+
+def get_value(input1, input2):
+    """
+    :param input1: a list, tuple, or dictionary record
+    :param input2: a lookup value
+    :return:  If the items are a list or tuple, the function should return the
+    integer index of the value. If the items are a dictionary, it should return
+    the value associated with the input key. The function should return None if
+    no value is found.
+    """
+    try:
+        return input1.index(input2)
+    except Exception:
+        pass
+    try:
+        return input1[input2]
+    except Exception:
+        return 'None'
