@@ -1,3 +1,8 @@
+"""
+This module is part og assignment 9.1 and
+the final project
+"""
+
 import unittest
 from src import utils as utils
 import datetime
